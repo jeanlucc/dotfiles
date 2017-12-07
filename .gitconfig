@@ -1,0 +1,22 @@
+[user]
+        name = jeanlucc
+	email = jeanlucc@users.noreply.github.com
+[core]
+        excludesfile = ~/.gitignore_global
+[push]
+        default = current
+[alias]
+        co = checkout
+        st = status
+        ci = commit --no-verify
+        cim = commit --no-verify -m
+        cia = commit --no-verify --amend --no-edit
+        ciam = commit --no-verify --amend
+        rc = rebase --continue
+        lg = log -M --decorate --graph
+        br = branch
+        hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+        type = cat-file -t
+        dump = cat-file -p
+[rerere]
+        enabled = true
